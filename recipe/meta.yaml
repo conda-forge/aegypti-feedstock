@@ -1,5 +1,5 @@
 {% set name = "aegypti" %}
-{% set version = "0.4.9" %}
+{% set version = "0.5.3" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/aegypti-{{ version }}.tar.gz
-  sha256: 08b58612c354a1b17fcc839cc364fd1571c7aea81887ff72e9389ecde49cc62a
+  sha256: a028668adc0b703b11fa6393a8e1e98de36ae3595a42d5b4658da32e88d17e5d
 
 build:
   entry_points:
