@@ -1,5 +1,5 @@
 {% set name = "aegypti" %}
-{% set version = "0.4.9" %}
+{% set version = "0.5.4" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/aegypti-{{ version }}.tar.gz
-  sha256: 08b58612c354a1b17fcc839cc364fd1571c7aea81887ff72e9389ecde49cc62a
+  sha256: 70a7bece472730b18d0a06291d92fe94fcaadd25ffc69866f54098f08f8ba5c7
 
 build:
   entry_points:
@@ -25,9 +25,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - numpy >=2.2.1
-    - scipy >=1.15.0
-    - networkx >=3.4.2
+    - hvala >=0.1.2
 
 test:
   imports:
